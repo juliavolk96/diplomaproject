@@ -1,0 +1,148 @@
+/*Сброс встроенных стилей для всех элементов*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Подключение шрифтов*/
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(css\Fonts\OpenSans-Bold.ttf) format("ttf"), url(css\Fonts\OpenSans-Bold.woff) format("woff"), url(css\Fonts\OpenSans-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(css\Fonts\OpenSans-Regular.ttf) format("ttf"), url(css\Fonts\OpenSans-Regular.woff) format("woff"), url(css\Fonts\OpenSans-Regular.woff2) format("woff2");
+}
+
+/*Оформление шапки*/
+
+.header {
+  display: block;
+  background-image: url(../Images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover; 
+  background-color: #000000; 
+  position: relative; 
+  z-index: 1;
+  padding-top: 35px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 130px;
+  margin-bottom: 64px;
+}
+
+/*Затемнение*/
+.header::after {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  opacity: 60%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  width: 179px;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-list-items {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  text-align: center;
+  list-style-type: none;
+}
+
+.menu-list-items:hover {
+  font-size: 13px;
+  text-decoration: underline;
+  font-weight: 400;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+.menu-list-items:nth-child(n+2) {
+  padding-left: 38px;
+}
+
+.menu-link {
+  color:white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.intro {
+  display: flex;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.intro-title {
+  font-size: 45px;
+  line-height: 75px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Open Sans";
+  text-align: center;
+  
+}
+
+/*Page*/
+
+.page {
+  display: flex;
+  font-family: "Open Sans";
+  margin: 0 auto;
+  width: 1170px;
+  justify-content: space-between;
+}
+
+/*Footer*/
+
+.footer {
+  display: block;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.social {
+  width: 1170px;
+  height: 83px;
+  background-color: #f4f7f6;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 40px;
+  color: #999999;
+  font-weight: 700;
+  font-family: "Open Sans";
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+}
