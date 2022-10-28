@@ -112,6 +112,35 @@
   
 }
 
+/*Trends*/
+.trends {
+  display: flex;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase; 
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+  font-family: "Open Sans";
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #e1d9bd;
+  width: 69px;
+  height: 2px;
+  margin: 13px auto;
+}
+
+
+
+
 /*Page*/
 
 .page {
@@ -120,6 +149,154 @@
   margin: 0 auto;
   width: 1170px;
   justify-content: space-between;
+}
+
+/*Main*/
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-right: 100px;
+  width: 815px;
+}
+
+.posts {
+  display: flex;
+}
+
+.categories {
+  font-weight: 700;
+  font-family: "Open Sans";
+}
+
+.category {
+  text-transform: uppercase;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 14px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #b59f5b;
+  text-decoration: none;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.tag:hover {
+  text-decoration: underline;
+}
+
+/*Articles*/
+
+.article-title {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: "Open Sans";
+}
+
+.article-title:hover {
+  color
+  : #b59f5b;
+}
+
+.article-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*Update and Author*/
+
+.update {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline; 
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.time {
+  font-size: 12px;
+  line-height: 40px;
+  color: #888888;
+  font-weight: 400;
+  font-family: "Open Sans";
+}
+
+.author {
+  font-size: 12px;
+  line-height: 40px;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Open Sans";
+  margin-left: 20px;
+}
+
+.decription {
+  font-size: 15px;
+  line-height: 22px;
+  color: #0f0d0e;
+  font-weight: 400;
+  font-family: "Open Sans";
+}
+
+/*Aside*/
+
+.aside {
+  width: 299px;
+}
+
+.latest-posts {
+  width: 100%;
+}
+
+.aside-post {
+  display: flex;
+}
+
+.aside-post:nth-child(n + 2) {
+  margin-top: 21px;
+}
+
+.aside-about {
+  margin-left: 20px;
+}
+
+.aside-title {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Open Sans";
+  width: 180px;
+}
+
+/*Search*/
+
+.search {
+  margin-top: 60px;
+  width: 271px;
+}
+
+.search-hint {
+  visibility: hidden;
+}
+
+.field {
+  border-style: none;
+  padding: 0 19px;
+  background-color: #f4f7f6;
+  height: 50px;
 }
 
 /*Footer*/
@@ -146,3 +323,4 @@
   display: flex;
   text-align: center;
 }
+
