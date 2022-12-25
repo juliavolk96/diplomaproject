@@ -586,15 +586,25 @@ input:focus {
 }
 
 .shop-button {
-  background-color: #b59f5b;
   font-size: 14px;
+  line-height: 40px;
   text-transform: uppercase;
-  color: #ffffff;
+  text-decoration: none;
   font-weight: 700;
-  width: 141px;
-  height: 49px;
+  background-color: #b59f5b;
+  border: none;
+  width: 140px;
+  height: 48px;
 }
 
+.shop-button a {
+  color: white;
+}
+
+.shop-button:hover {
+  background-color: #323232;
+ }
+ 
 .shop-link {
   color: #b59f5b;
   text-decoration: none;
