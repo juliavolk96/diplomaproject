@@ -466,6 +466,10 @@ input:focus {
   font-size: 14px;
 }
 
+.subscribe-button:hover {
+  background-color: #323232;
+ }
+ 
 /*Hashtags*/
 
 .hashtags {
@@ -604,7 +608,7 @@ input:focus {
 .shop-button:hover {
   background-color: #323232;
  }
- 
+
 .shop-link {
   color: #b59f5b;
   text-decoration: none;
