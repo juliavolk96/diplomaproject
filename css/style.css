@@ -469,7 +469,7 @@ input:focus {
 .subscribe-button:hover {
   background-color: #323232;
  }
- 
+
 /*Hashtags*/
 
 .hashtags {
@@ -599,6 +599,7 @@ input:focus {
   border: none;
   width: 140px;
   height: 48px;
+  color: white;
 }
 
 .shop-button a {
