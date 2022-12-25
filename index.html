@@ -15,11 +15,11 @@
   <header class="header">
     <div class="header-container">
       <div class="header-menu">
-        <div class="logo">
-          <a href=#0>
-            <img src="./svg/noemi-logo.svg" alt="Noemi">
-          </a>
-        </div>
+        <div class="logo"><a href="#0"><img src="./svg/noemi-logo.svg" alt="Логотип Noemi"></a></div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+        </label>
         <nav class="menu">
           <ul class="menu-list">
             <li class="menu-list-items"><a href=#0 class="menu-link">Главная</a></li>
@@ -32,13 +32,13 @@
         </nav>
       </div>
       <div class="banner">
-        <h1 class="banner-title">Блог о творчестве, спорте, <br> и образе жизни</h1>
+        <h1 class="banner-title">Блог о творчестве, спорте, и образе жизни</h1>
       </div>
     </div>
   </header>
   <!--Trends-->
   <section class="trends">
-    <h3 class="section-title">Сейчас в тренде</h3>
+    <h2 class="section-title">Сейчас в тренде</h2>
     <div class="trends-wrapper">
       <article class="trends-post" id="one_trend">
         <div class="trend-post">
@@ -46,7 +46,7 @@
             <li class="tag"><a href="#" class="article-tag">Lifestyle</a></li>
             <li class="tag"><a href="#" class="article-tag">Interior</a></li>
           </ul>
-          <p class="article-title"><a href="#" class="article-link">Сейчас в тренде: сад на подоконнике</a></p>
+          <h3 class="article-title"><a href="#" class="article-link">Сейчас в тренде: сад на подоконнике</a></h3>
         </div>
       </article>
       <article class="trends-post" id="two_trend">
@@ -54,8 +54,9 @@
           <ul class="tags">
             <li class="tag"><a href="#" class="article-tag">Food</a></li>
           </ul>
-          <p class="article-title"><a href="#" class="article-link">Сыры на красивых картинках из интернета: какие они на
-              вкус?</a></p>
+          <h3 class="article-title"><a href="#" class="article-link">Сыры на красивых картинках из интернета: какие они
+              на
+              вкус?</a></h3>
         </div>
       </article>
       <article class="trends-post" id="three_trend">
@@ -64,7 +65,7 @@
             <li class="tag"><a href="#" class="article-tag">Lifestyle</a></li>
             <li class="tag"><a href="#" class="article-tag">Travel</a></li>
           </ul>
-          <p class="article-title"><a href="#" class="article-link">Собираемся в первый поход в горы</a></p>
+          <h3 class="article-title"><a href="#" class="article-link">Собираемся в первый поход в горы</a></h3>
         </div>
       </article>
       <article class="trends-post" id="four_trend">
@@ -73,7 +74,8 @@
             <li class="tag"><a href="#" class="article-tag">Food</a></li>
             <li class="tag"><a href="#" class="article-tag">Health</a></li>
           </ul>
-          <p class="article-title"><a href="#" class="article-link">Сейчас в тренде: сколько витамина С в лимонах?</a></p>
+          <h3 class="article-title"><a href="#" class="article-link">Сейчас в тренде: сколько витамина С в лимонах?</a>
+          </h3>
         </div>
       </article>
     </div>
@@ -200,7 +202,7 @@
       <!--Aside-->
       <aside class="aside">
         <section class="new-posts">
-          <h4 class="section-title">Новые посты</h4>
+          <h2 class="section-title">Новые посты</h2>
           <article class="aside-post">
             <figure class="aside-image">
               <img src="./images/2.jpg" alt="Человек идет по пляжу на рассвете">
@@ -317,94 +319,117 @@
     </div>
     <!--Shop-->
     <section class="shop">
-      <h3 class="section-title">Наши изделия</h3>
+      <h2 class="section-title">Наши изделия</h2>
       <div class="shop-container">
         <article class="shop-posts">
-          <picture class="post-image">
+          <picture class="shop-image">
+            <source srcset="./images/shop-item-tablet1.jpg" alt="Розовая подушка"
+              media="(min-width: 641px) and (max-width: 1200px )">
+            <source srcset="./images/shop-item-mobile1.jpg" alt="Розовая подушка" media="(max-width: 640px)">
             <img src="./images/shop-item-desk1.jpg" alt="Розовая подушка">
           </picture>
-          <h3 class="article-title"><a href=#0 class="article-link">Подушки на диван</a></h3>
-          <div class="description">
-            <p>Набор из двух подушек с модными принтами. Видео о создании <a href="#">здесь.</a></p>
-          </div>
-          <div class="price-container">
-            <div class="price">
-              <p class="last-price">1000 Р</p>
-              <p>800 Р</p>
+          <div class="shop-border">
+            <div class="shop-wrapper">
+              <h3 class="article-title"><a href=#0 class="article-link">Подушки на диван</a></h3>
+              <div class="description">
+                <p>Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="shop-link">здесь.</a>
+                </p>
+              </div>
+              <div class="price-container">
+                <div class="price">
+                  <p class="last-price">1000 Р</p>
+                  <p>800 Р</p>
+                </div>
+                <button class="shop-button">в магазин</button>
+              </div>
             </div>
-            <button class="shop-button">в магазин</button>
           </div>
         </article>
         <article class="shop-posts">
-          <picture class="post-image">
+          <picture class="shop-image">
+            <source srcset="./images/shop-item-tablet2.jpg" alt='Кукла "Зайчик"'
+              media="(min-width: 641px) and (max-width: 1200px )">
+            <source srcset="./images/shop-item-mobile2.jpg" alt='Кукла "Зайчик"' media="(max-width: 640px)">
             <img src="./images/shop-item-desk2.jpg" alt='Кукла "Зайчик"'>
           </picture>
-          <h3 class="article-title"><a href=#0 class="article-link">Кукла "Зайчик"</a></h3>
-          <div class="description">
-            <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#">весенняя серия постов</a> в
-              блоге и несколько подкастов.</a></p>
-          </div>
-          <div class="price-container">
-            <div class="price">
-              <p>3500 Р</p>
+          <div class="shop-border">
+            <div class="shop-wrapper">
+              <h3 class="article-title"><a href=#0 class="article-link">Кукла "Зайчик"</a></h3>
+              <div class="description">
+                <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#"
+                    class="shop-link">весенняя серия постов</a> в
+                  блоге и несколько подкастов.</a></p>
+              </div>
+              <div class="price-container">
+                <div class="price">
+                  <p>3500 Р</p>
+                </div>
+                <button class="shop-button">в магазин</button>
+              </div>
             </div>
-            <button class="shop-button">в магазин</button>
           </div>
         </article>
         <article class="shop-posts">
-          <picture class="post-image">
+          <picture class="shop-image">
+            <source srcset="./images/shop-item-tablet3.jpg" alt="Шестиугольная рамка"
+              media="(min-width: 641px) and (max-width: 1200px )">
+            <source srcset="./images/shop-item-mobile3.jpg" alt="Шестиугольная рамка" media="(max-width: 640px)">
             <img src="./images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
           </picture>
-          <h3 class="article-title"><a href=#0 class="article-link">Шестиугольная рамка</a></h3>
-          <div class="description">
-            <p>Необычная рамка для украшения дома из видео <a href="#">«Как сделать рамку из подручных средств за 30
-              минут»</a></p>
-          </div>
-          <div class="price-container">
-            <div class="price">
-              <p class="last-price">500 Р</p>
-              <p>400 Р</p>
+          <div class="shop-border">
+            <div class="shop-wrapper">
+              <h3 class="article-title"><a href=#0 class="article-link">Шестиугольная рамка</a></h3>
+              <div class="description">
+                <p>Необычная рамка для украшения дома из видео <a href="#" class="shop-link">«Как сделать рамку из
+                    подручных средств за 30
+                    минут»</a></p>
+              </div>
+              <div class="price-container">
+                <div class="price">
+                  <p class="last-price">500 Р</p>
+                  <p>400 Р</p>
+                </div>
+                <button class="shop-button">в магазин</button>
+              </div>
             </div>
-            <button class="shop-button">в магазин</button>
           </div>
         </article>
       </div>
     </section>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <adress class="adress">
+          <ul class="socials">
+            <li class="icon">
+              <a href=#0 class="icon-link-dribbble">
+                <span class="icon-text">
+                  Dribble
+                </span>
+              </a>
+            </li>
+            <li class="icon">
+              <a href=#0 class="icon-link-pinterest">
+                <span class="icon-text">
+                  Pinterest
+                </span>
+              </a>
+            </li>
+            <li class="icon">
+              <a href=#0 class="icon-link-tumblr">
+                <span class="icon-text">
+                  Tumblr
+                </span>
+              </a>
+            </li>
+          </ul>
+        </adress>
+      </div>
+      <div class="footer-copyright">
+        <a href="#0" class="copyright">Copyright © 2009–2019 City Blog LLC.</a>
+      </div>
+    </footer>
   </div>
-
-  <!--Footer-->
-  <footer class="footer">
-    <div class="footer-container">
-      <adress class="adress">
-        <ul class="socials">
-          <li class="icon">
-            <a href=#0 class="icon-link-dribbble">
-              <span class="icon-text">
-                Dribble
-              </span>
-            </a>
-          </li>
-          <li class="icon">
-            <a href=#0 class="icon-link-pinterest">
-              <span class="icon-text">
-                Pinterest
-              </span>
-            </a>
-          </li>
-          <li class="icon">
-            <a href=#0 class="icon-link-tumblr">
-              <span class="icon-text">
-                Tumblr
-              </span>
-            </a>
-          </li>
-        </ul>
-      </adress>
-    </div>
-    <div class="footer-copyright">
-      <a href="#0" class="copyright">Copyright © 2009–2019 City Blog LLC.</a>
-    </div>
-  </footer>
 </body>
 
 </html>

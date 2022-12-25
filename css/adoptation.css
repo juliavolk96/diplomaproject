@@ -1,7 +1,338 @@
 @media screen and (min-width: 1201px) {
- 
+  .header {
+    background-image: url(../images/banner-bg.jpg);
+    max-width: 1660px;
+    height: 450px;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .banner-title {
+    width: 58.03%;
+  }
+
+  /*Trends*/
+
+  .trends .section-title {
+    font-size: 20px;
+  }
+
+/*Page*/
+
+.post-image {
+  width: 381px;
+  height: 294px;
 }
 
-@media (min-width: 641px) and (max-width: 1200px) {
-  
 }
+
+@media screen and (min-width: 641px) and (max-width: 1200px) {
+  .header {
+    background-image: url(../images/banner-bg-tablet.jpg);
+    height: 392px;
+  }
+
+  .header-container {
+    height: 100%;
+    width: 91.02%;
+  }
+
+  .logo {
+    width: 158px;
+    margin-top: 43px;
+    margin-bottom: 103px;
+  }
+
+  .banner {
+    width: 90%;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .banner-title {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  /*Burger*/
+  .menu-button-container {
+    margin-top: 51px;
+  }
+
+  /*Trends*/
+
+  .trends {
+    margin-top: 45px;
+  }
+
+  .trends .section-title  {
+    font-size: 18px;
+  }
+
+  .trends-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .trends-post {
+    width: 50%;
+  }
+
+  /*Page*/
+
+  .page {
+    margin-top: 50px;
+  }
+
+  .page-container {
+    width: 91%;
+  }
+
+  .main {
+    width: 55.71%;
+    margin-right: 35px;
+  }
+
+  .posts {
+    flex-wrap: wrap;
+  }
+
+  .article-title {
+    font-size: 17px;
+  }
+
+  /*Aside*/
+
+  .aside {
+    width: 42.71%;
+  }
+
+  /*Search*/
+
+  .search form {
+    width: 95.5%;
+  }
+
+  .field {
+    width: 78.8%;
+  }
+
+  /*Shop*/
+
+  .shop-container {
+    flex-wrap: wrap;
+    width: 91%;;
+  }
+
+  .shop-posts {
+    width: 50%;
+  }
+
+  .footer-container {
+    width: 91%;
+  }
+
+  .footer-copyright {
+    width: 91%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header {
+    background-image: url(../images/banner-mobile.jpg);
+    height: 640px;
+  }
+
+  .header-container {
+    height: 100%;
+    width: 91.11%;
+    text-align: center;
+  }
+
+  .logo {
+    width: 269px;
+    margin: 0 auto;
+    margin-top: 230px;
+    margin-bottom: 40px;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .banner-title {
+    font-size: 26px;
+    margin-top: 0;
+  }
+
+  /*Burger*/
+  .menu-button-container {
+    margin-top: 30px;
+  }
+
+  /*Trends*/
+
+  .trends {
+    margin-top: 40px;
+  }
+
+  .trends .section-title  {
+    font-size: 16px;
+  }
+
+  .trends-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .trends-post {
+    width: 100%;
+  }
+
+  .page {
+    margin-top: 45px;
+  }
+
+  .page-container {
+    flex-wrap: wrap;
+    width: 91.11%;
+  }
+
+  .main {
+    width: 330px;
+  }
+
+  .categories {
+    width: 100%;
+  }
+  .posts {
+    flex-direction: column;
+  }
+
+  .post-image img {
+    max-width: 100%;  
+    height: auto;  
+  }
+
+  .article-title {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  /*Aside*/
+  .aside {
+    width: 100%;
+  }
+
+  .aside .new-posts .section-title {
+    font-size: 16px;
+  }
+
+  /*Search*/
+  .field {
+    width: 82.1%;
+  }
+
+  /*Hashtags*/
+
+  /*Shop*/
+
+  .shop-container {
+    width: 91.67%;
+    flex-wrap: wrap;
+  }
+
+  /*Footer*/
+  .footer-container {
+    width: 91.67%;
+  }
+}
+
+
+/*Burger*/
+@media (max-width: 768px) {
+
+  /*Burger*/
+  .header-menu {
+    flex-direction: row;
+  }
+
+  .menu-button-container {
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu-list {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-list>li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+
+  .menu-list>li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+
+  .menu-list {
+    display: none;
+  }
+}
+
+/*Trends*/
