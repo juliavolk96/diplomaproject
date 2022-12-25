@@ -595,6 +595,16 @@ input:focus {
   height: 49px;
 }
 
+.shop-link {
+  color: #b59f5b;
+  text-decoration: none;
+}
+
+.shop-link:hover {
+  text-decoration: underline;
+}
+
+
 /*Footer*/
 
 .footer {
