@@ -539,6 +539,10 @@ input:focus {
   font-size: 20px;
 }
 
+.shop-image {
+  position: absolute;
+}
+
 .shop-container {
   display: flex;
   justify-content: space-evenly;
@@ -562,10 +566,9 @@ input:focus {
 
 .shop-border {
   outline: 3px solid #b59f5b;
-  padding: 60px 40px;
-  height: 265px;
   position: relative;
-
+  top: 100px;
+  padding: 50px 28px;
 }
 
 .shop-wrapper {
