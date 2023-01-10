@@ -540,7 +540,7 @@ input:focus {
 }
 
 .shop-image {
-  position: absolute;
+  position: ;
 }
 
 .shop-container {
@@ -564,16 +564,12 @@ input:focus {
 }
 
 
-.shop-border {
-  outline: 3px solid #b59f5b;
-  position: relative;
-  top: 100px;
-  padding: 50px 28px;
-}
-
 .shop-wrapper {
   display: flex;
   flex-direction: column;
+  outline: 3px solid #b59f5b;
+  outline-offset: 35px;
+  min-height: 230px;
 }
 
 .price-container {
