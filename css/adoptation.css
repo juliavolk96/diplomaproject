@@ -142,11 +142,12 @@
 }
 
 @media screen and (max-width: 640px) {
+
   .header {
     background-image: url(../images/banner-mobile.jpg);
     height: 640px;
   }
-
+  
   .header-container {
     height: 100%;
     width: 91.11%;
@@ -191,6 +192,8 @@
 
   .trends-post {
     width: 100%;
+    position: relative;
+    margin-bottom: 4px;
   }
 
   .page {
@@ -209,6 +212,7 @@
   .categories {
     width: 100%;
   }
+
   .posts {
     flex-direction: column;
   }
@@ -216,6 +220,10 @@
   .post-image img {
     max-width: 100%;  
     height: auto;  
+  }
+
+  .post-image {
+    margin-right: 0;
   }
 
   .article-title {
@@ -235,23 +243,62 @@
     font-size: 16px;
   }
 
+  .new-posts {
+    margin-right: 0;
+  }
+
   /*Search*/
+  .search form {
+    width: 100%;
+  }
+  .subscription {
+    width: 100%;
+  }
+
+
   .field {
     width: 82.1%;
   }
 
   /*Hashtags*/
 
+  .hashtags {
+    width: 100%;
+  }
+
+  /*Topics*/
+
+  .topics {
+    width: 100%;
+  }
+
   /*Shop*/
+
+  .shop .section-title {
+    margin-bottom: -40px;
+  }
 
   .shop-container {
     width: 91.67%;
     flex-wrap: wrap;
   }
 
+  .shop-wrapper {
+    outline-offset: 20px;
+    min-height: 200px;
+  }
+
+  .shop-image {
+    margin-top: 60px;
+  }
+
   /*Footer*/
   .footer-container {
     width: 91.67%;
+  }
+
+  .footer {
+    margin-top: 80px;
   }
 }
 

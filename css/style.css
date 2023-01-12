@@ -147,9 +147,6 @@ li {
   color: white;
 }
 
-.trends-post:not(4) {
-  margin-right: 4px;
-}
 
 /*.tags {
   
@@ -493,17 +490,20 @@ input:focus {
   text-transform: uppercase;
   display: flex;
   flex-wrap: wrap;
-  width: 95%;
+  width: calc(100% - 20px);
 }
 
 .hashtag {
   border: 3px solid #eeeeee;
   margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .hashtag:hover {
   background-color: rgba(244, 243, 241, 0);
-  outline: 3px solid #b59f5b;
+  border: 3px solid #b59f5b;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .hashtag-link {
