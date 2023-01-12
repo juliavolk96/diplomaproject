@@ -134,6 +134,7 @@
 
   .shop-wrapper {
     min-height: 265px;
+    width: 330px;
   }
   /*Footer*/
 
@@ -146,9 +147,7 @@
     width: 91%;
   }
 
-  .footer {
-    
-  }
+ 
 }
 
 @media screen and (max-width: 640px) {
