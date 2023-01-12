@@ -553,7 +553,7 @@ input:focus {
 
 .shop-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: center;
   width: 1200px;
   margin: 0 auto;
@@ -563,12 +563,12 @@ input:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 345px;
+  /*flex-basis: 345px;*/
 }
 
 .shop-wrapper .description {
   margin-bottom: 25px;
-  width: 300px;
+  
 }
 
 
@@ -576,7 +576,8 @@ input:focus {
   display: flex;
   flex-direction: column;
   outline: 3px solid #b59f5b;
-  outline-offset: 35px;
+  outline-offset: 30px;
+  width: 300px;
   min-height: 230px;
 }
 

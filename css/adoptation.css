@@ -132,6 +132,12 @@
     width: 50%;
   }
 
+  .shop-wrapper {
+    margin-bottom: 60px;
+    min-height: 210px;
+  }
+  /*Footer*/
+
   .footer-container {
     width: 91%;
   }
