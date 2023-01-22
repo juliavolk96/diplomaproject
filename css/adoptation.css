@@ -73,14 +73,14 @@
     font-size: 18px;
   }
 
-  .trends-wrapper {
+  /* .trends-wrapper {
     display: flex;
     flex-wrap: wrap;
   }
 
   .trends-post {
     width: 50%;
-  }
+  } */
 
   /*Page*/
 
@@ -148,6 +148,17 @@
   }
 
  
+}
+
+@media (orientation: landscape) {
+  .trends-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .trends-post {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 640px) {
