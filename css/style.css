@@ -33,7 +33,151 @@ li {
   list-style-type: none;
 }
 
+/*Pop-up*/
+
+/* .box {
+  width: 20%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 35px;
+  border: 1px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+  display: none;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #000;
+  border: 1px solid black;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  opacity: 0.6;
+}
+
+.button:hover {
+  background: black;
+  color: white;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 24%;
+  position: relative;
+  z-index: 4;
+}
+
+.popup .close {
+  position: absolute;
+  top: -30px;
+  right: -2px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.popup .close:hover {
+  color: #000;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.overlay {
+  transition: opacity 500ms;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.overlay:target {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup-select {
+  width: 100%;
+  background-color: #f4f7f6;
+  margin-bottom: 18px;
+  border-style: none;
+  outline: 0;
+  height: 50px;
+  opacity: 0.541;
+  font-size: 13px;
+  color: #000000;
+  font-weight: 400;
+  background-image: url("");
+  background-position: right 15px center;
+  background-size: 8px;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 20px;
+}
+
+.popup-select:focus {
+  border: 1px solid #b59f5b;
+}
+
+.radio {
+  
+}
+
+textarea {
+  max-width: 98%;
+}
+
+.popup-textarea {
+  width: 98%;
+  border-style: none;
+  outline: 0;
+  height: 131px;
+  opacity: 0.541;
+  font-size: 13px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.popup-textarea:focus {
+  border: 1px solid #b59f5b;
+}
+
+.popup-button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #b59f5b;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.popup-button:hover {
+  background-color: #323232;
+ } */
 /*Header*/
+
 .header {
   position: relative;
   background-position: top;
