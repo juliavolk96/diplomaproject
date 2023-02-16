@@ -60,7 +60,7 @@
 
   .logo {
     width: 272px;
-    margin: 0 auto 35px;
+    margin: 0 auto 6px;
   }
   
   .header-menu {
@@ -94,9 +94,16 @@
 
   .banner-title {
     font-size: 27px;
+    line-height: 35px;
+    margin-top: 17px;
+    margin-bottom: 17px;
   }
 
   /*Trends*/
+
+  .trends .section-title {
+    font-size: 16px;
+  }
 
   .trends-wrapper {
     flex-direction: column;
@@ -105,16 +112,20 @@
 
   .trends-post {
     width: 100%;
-    margin: 0 0 3px;
-    min-height: 230px;
+    margin: 0px;
+    min-height: 233px;
   }
 
   .trend-post {
     width: 100%;
+    margin: 5px;
+    padding: 28px 20px;
   }
 
   .trend-post .article-title {
     font-size: 1rem;
+    margin-top: 5px;
+    font-size: 16px;
   }
 
   /*Page*/
@@ -143,16 +154,26 @@
   .post-image {
     margin: auto;
     width: 100%;
-    
+  }
+
+  .image {
+    width: 103%;
   }
 
   .categories {
     width: 100%;
+    margin-left: 0;
   }
 
   .article-title {
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 20px;
     margin-bottom: 7px;
+  }
+
+  .text-description {
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .update {
@@ -164,10 +185,20 @@
     width: 100%;
   }
 
+  .new-posts .section-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .aside-title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
   /*Search*/
 
   .field {
-    width: 83vw;
+    width: 56vw;
   }
 
   .button {
@@ -176,17 +207,25 @@
 
   /*Subscription*/
 
+  .subscription .section-title {
+    font-size: 16px;
+  }
+
   .subscribe-field{
-    width: 91vw;
+    width: 70vw;
   }
 
   .subscribe-button {
-    width: 91vw;
+    width: 70vw;
   }
 
   /*Hashtags*/
 
-  .hashtags-lis {
+  .hashtags .section-title {
+    font-size: 16px;
+  }
+
+  .hashtags-list {
     width: 100%;
   }
 
@@ -194,6 +233,16 @@
     font-size: 12px;
   }
 
+  .hashtags-link {
+    font-size: 12px;
+    line-height: 40px;
+  }
+
+  /*Topics*/
+
+  .topics {
+    margin-left: 0px;
+  }
   /*Shop*/
   
   .shop-container {
@@ -218,6 +267,9 @@
     margin-bottom: 25px;
   }
 
+  .footer-copyright {
+    margin-left: 0px;
+  }
 }
 
 /*Планшетная версия*/

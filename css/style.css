@@ -145,10 +145,10 @@ li {
 
 .trends .section-title {
   font-size: 20px;
-  width: 1200px;
+  /* width: 1200px; */
   text-align: center;
   margin: 0px 0px 0px 0px;
-  margin: -1px 1px 20px 230px;
+  margin: 0 auto;
 }
 
 .trends-wrapper {
@@ -622,7 +622,7 @@ input:focus {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
