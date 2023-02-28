@@ -1,0 +1,181 @@
+/*Планшетная версия*/
+
+@media (min-width: 641px) and (max-width: 1200px ) {
+    
+  /*Header*/
+
+  .header {
+    background-image: url(../images/banner-bg-tablet.jpg);
+    width: 100%;
+    padding: 35px;
+    margin-bottom: 40px;
+  }
+
+  .header-menu{
+    width: auto;
+  }
+
+  .logo {
+    width: 160px;
+  }
+  
+  .menu {
+    content: " ";
+    height: 20px; 
+    width: 25px;
+    border-bottom: 12px double rgb(255, 255, 255); 
+    border-top: 4px solid rgb(255, 255, 255); 
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .banner {
+    width: 610px;
+    padding: 90px 0;
+  }
+
+  .banner-title {
+    font-size: 38px;
+  }
+
+  /*Trends*/
+
+  .trends .section-title {
+    margin: 0 0 20px;
+  }
+
+  .trends-wrapper {
+    flex-wrap: wrap;
+    padding: auto;
+    margin-bottom: 40px;
+  }
+
+  .trends-post {
+    width: 49.5%; 
+    min-height: 250px;    
+    margin: auto;
+    margin-bottom: 3px;
+  }
+
+  .trend-post .article-title {
+    font-size: 17px; 
+  }
+
+  /*Page*/
+
+  .page {
+    margin-bottom: 10px;
+    width: 91%;
+  }
+
+  .page-container {
+    margin-bottom: 60px;
+  }
+
+  .main {
+    margin: auto;
+  }
+
+  .posts {
+    display: flex;
+    flex-direction: column;
+    margin-right: 45px;
+  }
+
+  .posts:not(:first-child) {
+    margin-top: 65px;
+  }
+
+  .post-image {
+    width: 100%;
+  }
+  
+  .categories {
+    width: 100%;
+  }
+  
+  .article-title {
+    margin-top: 0.5em;
+    margin-bottom: 20px;
+    font-size: 17px; 
+  }
+
+  .update {
+    margin-bottom: 30px;
+  }
+
+  /*Aside*/
+
+  .aside {
+    width: 68.5%;
+    max-width: 397px;
+  }
+
+  .aside-post {
+    width: 100%;
+  }
+
+  /*Search*/
+
+  .field {
+    width: 31vw;
+  }
+
+  .button {
+    left: 29.5vw;
+  }
+
+  /*Subscription*/
+
+  .subscribe-button{
+    width: 34.5vw;
+  }
+
+  .subscribe-field {
+    width: 34.5vw;
+  }
+
+  /*Hashtags*/
+
+  .hashtags-list {
+    width: 100%;
+  }
+
+  /*Shop*/
+
+  .shop {
+    width: 100%;
+  }
+
+  .shop-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .shop-item:nth-child(odd) {
+    /*flex: 0 1 46%;*/
+    margin-right: 22px;
+  }
+
+  .shop-wrapper {
+    margin-bottom: 4px;
+    width: 43vw;
+    padding: 25px 15px; /*Под вопросом*/
+  }
+
+  .picture-shop {
+  width: 38vw;
+  }
+
+  /*Footer*/
+
+  .footer-container {
+    width: 90%;
+  }
+
+  .adress {
+    margin-bottom: 15px;
+  }
+}
