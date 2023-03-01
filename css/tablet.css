@@ -1,22 +1,25 @@
 /*Планшетная версия*/
 
 @media (min-width: 641px) and (max-width: 1200px ) {
-    
+  
   /*Header*/
 
   .header {
     background-image: url(../images/banner-bg-tablet.jpg);
     width: 100%;
-    padding: 35px;
-    margin-bottom: 40px;
+    padding: 0px;
+    margin-bottom: 0px;
   }
 
   .header-menu{
     width: auto;
+    padding-bottom: 84px;
   }
 
   .logo {
     width: 160px;
+    margin-top: 44px;
+    margin-left: 35px;
   }
   
   .menu {
@@ -25,6 +28,8 @@
     width: 25px;
     border-bottom: 12px double rgb(255, 255, 255); 
     border-top: 4px solid rgb(255, 255, 255); 
+    margin-right: 33px;
+    margin-top: 52px;
   }
 
   .menu-list {
@@ -32,150 +37,228 @@
   }
 
   .banner {
-    width: 610px;
-    padding: 90px 0;
+    width: 620px;
+    padding: 0px;
   }
 
   .banner-title {
-    font-size: 38px;
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 112px;
   }
 
   /*Trends*/
 
+  .trends {
+    margin-top: 43px;
+  }
+
   .trends .section-title {
-    margin: 0 0 20px;
+    /* margin: 0 0 20px; */
+    font-size: 18px;
   }
 
   .trends-wrapper {
     flex-wrap: wrap;
     padding: auto;
+    margin-top: 21px;
     margin-bottom: 40px;
   }
 
   .trends-post {
     width: 49.5%; 
-    min-height: 250px;    
+    min-height: 247px;    
     margin: auto;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
+  }
+
+  .trend-post {
+    padding: 30px;
   }
 
   .trend-post .article-title {
     font-size: 17px; 
   }
-
+  
+  .trend-post .article-tag {
+    font-size: 14px; 
+  }
   /*Page*/
 
   .page {
+    margin-top: 42px;
     margin-bottom: 10px;
     width: 91%;
   }
 
   .page-container {
     margin-bottom: 60px;
+    padding-left: 0;
+    max-width: 700px;
   }
 
   .main {
+    max-width: 427px;
     margin: auto;
   }
 
   .posts {
     display: flex;
     flex-direction: column;
-    margin-right: 45px;
+    margin-right: 43px;
   }
 
   .posts:not(:first-child) {
-    margin-top: 65px;
+    margin-top: 63px;
+    margin-right: 35px;
   }
 
   .post-image {
     width: 100%;
   }
+
+  .image {
+    width: 100%
+  }
   
   .categories {
     width: 100%;
   }
+
+  .posts .categories {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .posts .categories .description {
+    margin-top: 5px;
+  }
   
-  .article-title {
-    margin-top: 0.5em;
+  .posts .article-title {
+    margin-top: 6px;
     margin-bottom: 20px;
     font-size: 17px; 
   }
 
   .update {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 
   /*Aside*/
 
   .aside {
-    width: 68.5%;
-    max-width: 397px;
+    /* width: 68.5%; */
+    width: 272px;
   }
 
-  .aside-post {
-    width: 100%;
+  .new-posts {
+    margin-left: 0;
   }
 
   /*Search*/
 
-  .field {
-    width: 31vw;
-  }
-
-  .button {
-    left: 29.5vw;
+  .search {
+    margin-left: 0px;
   }
 
   /*Subscription*/
 
-  .subscribe-button{
-    width: 34.5vw;
-  }
-
-  .subscribe-field {
-    width: 34.5vw;
+  .subscription {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: 0px;
   }
 
   /*Hashtags*/
+
+  .hashtags {
+    width: inherit;
+    margin-left: 0px;
+  }
 
   .hashtags-list {
     width: 100%;
   }
 
+  /*Topics*/
+  .topics {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+
   /*Shop*/
 
   .shop {
     width: 100%;
+    margin-top: 64px;
+  }
+
+  .shop .section-title {
+    font-size: 18px;
+    margin: 0 0 28px;
   }
 
   .shop-container {
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 0px;
   }
 
   .shop-item:nth-child(odd) {
-    /*flex: 0 1 46%;*/
-    margin-right: 22px;
+    /* flex: 0 1 46%; */
   }
 
   .shop-wrapper {
     margin-bottom: 4px;
     width: 43vw;
-    padding: 25px 15px; /*Под вопросом*/
+    padding: 17px; /*Под вопросом*/
+    bottom: 28px;
+    margin: 0px;
   }
 
-  .picture-shop {
-  width: 38vw;
+  .shop-wrapper .article-title {
+    font-size: 17px;
+    line-height: 22px;
   }
+
+  .shop-wrapper .description {
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+  }
+
+  .price {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .last-price {
+    font-size: 14px;
+    margin-left: 0px;
+    margin: 0px;
+  }
+  
 
   /*Footer*/
 
+  .footer {
+    margin-top: 28px;
+  }
+  
   .footer-container {
     width: 90%;
+    margin-bottom: 25px;
   }
 
   .adress {
     margin-bottom: 15px;
+  }
+
+  .socials {
+    margin-right: 32px;
+  }
+
+  .footer-copyright {
+    margin-left: 12px;
   }
 }

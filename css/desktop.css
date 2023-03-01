@@ -250,7 +250,7 @@ li {
 
 .main {
   
-  width: 790px;
+  max-width: 790px;
   
 }
 
@@ -322,9 +322,10 @@ li {
   margin-top: 47px;
 }
 
-.description > p {
+.text-description {
   line-height: 22px;
-  margin: 0;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 /* .description > p:not(:first-child) {
