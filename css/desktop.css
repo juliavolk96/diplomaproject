@@ -870,6 +870,7 @@ input:focus {
   height: 26px;
   top: -31px;
   left: 345px;
+  cursor: pointer;
   background: url(../svg/form-x.svg);
 }
 
