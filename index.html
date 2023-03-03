@@ -14,41 +14,52 @@
 
 <body>
   <!--Header-popup-->
-  <!-- <div class="popup">
+  <div class="popup popup-hidden">
     <div class="popup-container">
       <button class="popup-close" type="button"></button>
-      <div class="popup-header popop-item">
-        <h2>Ваш фидбек</h2>
+      <div class="popup-feedback">
+        <h2 class="section-title">Ваш фидбек</h2>
       </div>
-      <form action="" class="popup-form">
-        <div class="form-input popup-item">
-          <p class="text-input item-margin">Как часто вы заходите на сайт?</p>
-          <select name="select-popup" class="popup-cell select-popup"">
-            <option>Каждый день</option>
-            <option>1-2 раза в неделю</option>
-            <option>Раз в месяц</option>
-            <option>Очень редко</option>
-          </select>
-        </div>
-        <div class="popup-radio popup-item">
-          <p class="topic-radio item-margin">Вы подписаны на e-mail рассылку?</p>
-          <label class="radio-group">
-            <input type="radio" class="popup-radio" name="radio-group">
-            <span class="text-radio">Да</span>
-          </label>
-          <label class="radio-group">
-            <input type="radio" class="popup-radio" name="radio-group">
-            <span class="text-radio">Нет</span>
-          </label>
-        </div>
-        <div class="popup-textarea popup-item">
-          <p class="item-margin">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-          <textarea name="field-textarea" placeholder="Может, больше рецептов?" class="popup-cell" rows="8"></textarea>
-        </div>
-        <button class="popup-button popup-item popup-cell">Отправить</button>
-      </form>
+      <div class="content">
+        <form class="form">
+          <div class="form-input">
+            <p class="text-input">Как часто вы заходите на сайт?</p>
+            <select name="popup-select" class="popup-select">
+              <option>Почти каждый день</option>
+              <option>Раз в несколько дней</option>
+              <option>Раз в несколько недель</option>
+              <option>Несколько раз в год</option>
+            </select>
+          </div>
+
+          <div class="popup-radio">
+            <p class="topic-radio">Вы подписаны на e-mail рассылку?</p>
+            <div class="radio">
+              <div class="radio-input">
+                <input class="feedback-radio-input" type="radio" name="radio" id="feedback-radio-1">
+                <label class="feedback-radio-label" for="feedback-radio-1">Да</label>
+              </div>
+
+              <div class="radio">
+                <div class="radio-input">
+                  <input class="feedback-radio-input" type="radio" name="radio" id="feedback-radio-2">
+                  <label class="feedback-radio-label" for="feedback-radio-2">Нет</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="popup-textarea">
+            <label class="feedback-question" for="feed-back-info">Расскажите какой контент вы бы хотели видеть на нашем сайте?</label>
+            <div class="textarea">
+              <textarea class="textarea-field" name="text" placeholder="Может,больше рецептов?" id="feed-back-info"></textarea>
+            </div>
+            <button class="popup-button">Отправить</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </div> -->
+  </div>
   <!-- Header -->
   <div class="header">
     <div class="header-container">
@@ -368,7 +379,8 @@
           </picture>
           <div class="shop-wrapper">
             <h3 class="article-title"><a href=#0 class="article-link">Кукла «Зайчик»</a></h3>
-            <p class="description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="shop-link">весенняя серия постов</a> в блоге и несколько подкастов.</a></p>
+            <p class="description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#"
+                class="shop-link">весенняя серия постов</a> в блоге и несколько подкастов.</a></p>
             <div class="price-container">
               <div class="price">
                 <p>3500 Р</p>
@@ -386,7 +398,8 @@
           </picture>
           <div class="shop-wrapper">
             <h3 class="article-title"><a href=#0 class="article-link">Шестиугольная рамка</a></h3>
-            <p class="description">Необычная рамка для украшения дома из видео <a href="#" class="shop-link">«Как сделать рамку из подручных средств за 30 минут»</a></p>
+            <p class="description">Необычная рамка для украшения дома из видео <a href="#" class="shop-link">«Как
+                сделать рамку из подручных средств за 30 минут»</a></p>
             <div class="price-container">
               <div class="price">
                 <p class="last-price">500 Р</p>
