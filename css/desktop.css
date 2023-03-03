@@ -864,6 +864,7 @@ input:focus {
 }
 
 .popup-close {
+  border: none;
   content: "";
   position: relative;
   width: 26px;
