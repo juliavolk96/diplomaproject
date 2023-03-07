@@ -24,10 +24,9 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: auto;
   font-family: "Open Sans", sans-serif;
   height: 100%;
-  max-width: 1660px;
 }
 
 a {
