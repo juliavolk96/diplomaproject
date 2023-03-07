@@ -826,9 +826,9 @@ input:focus {
 
 /*Popup*/
 
-/* .popup-hidden {
+.popup-hidden {
   display: none;
-} */
+}
 
 .popup {
   width: 100%;
