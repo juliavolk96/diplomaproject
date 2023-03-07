@@ -27,6 +27,7 @@ body {
   margin: auto;
   font-family: "Open Sans", sans-serif;
   height: 100%;
+  /* max-width: 1660px; */
 }
 
 a {
@@ -168,7 +169,7 @@ li {
   background-position: top;
   position: relative;
   min-height: 323px;
-  max-height: auto;
+  max-height: 100%;
   width: 24.8%;
   z-index: 1;
   padding: 10px;
