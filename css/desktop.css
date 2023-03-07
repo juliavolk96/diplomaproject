@@ -826,9 +826,9 @@ input:focus {
 
 /*Popup*/
 
-.popup-hidden {
+/* .popup-hidden {
   display: none;
-}
+} */
 
 .popup {
   width: 100%;
@@ -847,30 +847,30 @@ input:focus {
 .popup .section-title {
   font-size: 20px;
   line-height: 29px;
-  margin-top: 16px;
+  margin-top: 18px;
   margin-bottom: 12px;
 }
 
 .popup-container {
   max-width: 390px;
-  margin: auto;
+  margin: 0 auto;
   background-color:rgb(255, 255, 255);
-  box-sizing: border-box;
   position: relative;
-  margin-top: 10vh;
-  padding: 0 25px;
+  /* margin-top: 10vh; */
+  padding-left: 31px;
   height: fit-content;
-  margin-top: 124px;
+  margin-top: 126px;
+  padding-right: 26px;
 }
 
 .popup-close {
   border: none;
   content: "";
   position: relative;
-  width: 26px;
-  height: 26px;
+  width: 20px;
+  height: 20px;
   top: -31px;
-  left: 345px;
+  left: 100%;
   cursor: pointer;
   background: url(../svg/form-x.svg);
 }
@@ -886,7 +886,7 @@ input:focus {
   display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	padding-bottom: 23px;
+	padding-bottom: 26px;
 }
 
 .popup-select {
@@ -900,7 +900,7 @@ input:focus {
   -moz-appearance: none;
   min-width: 100%;
   height: 50px;
-  padding-left: 24px;
+  padding-left: 20px;
   cursor: pointer;
 }
 
@@ -910,18 +910,54 @@ select:focus {
 
 .radio {
 	display: flex;
-	padding-left: 7px;
-	margin-bottom: -15px;
+	/* padding-left: 7px; */
+	margin-bottom: -30px;
 }
 
 .radio-input {
   position: relative;
-	margin-right: 16px;
+	margin-right: 2px;
 }
 
 .feedback-radio-input {
   cursor: pointer;
 }
+
+.feedback-radio-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+/* for the label element associated with .custom-checkbox */
+.feedback-radio-input + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+/* creating a pseudo-element in label before with the following styles*/
+.feedback-radio-input + label::before {
+  transition: 0.3s;
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  /* border: 1px solid #b59f5b; */
+  background-image: url("../svg/form-empty-circle.svg");
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 55% 55%;
+  border-radius: 50%;
+}
+/* styles for a checkbox in the checked state */
+.feedback-radio-input:checked + label::before {
+  /* border: 1px solid #b59f5b; */
+  background-image: url("../svg/form-circle.svg");
+  background-size: 55% 55%;
+}
+
 
 .feedback-radio-label {
   font-size: 13px;
@@ -992,9 +1028,10 @@ select:focus {
   font-size: 14px;
   cursor: pointer;
   padding: 0px 0px 0px 0px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .popup-button:hover {
   background-color: #323232;
  }
+
