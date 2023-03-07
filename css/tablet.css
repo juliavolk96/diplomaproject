@@ -268,7 +268,7 @@
   .popup {
     width: 100%;
     height: 100vh;
-    padding-top: 236px;
+    padding-top: 238px;
     padding-bottom: 0px;
     background-color: rgba(0, 0, 0, 0.6);
     overflow-y: auto;
@@ -282,14 +282,14 @@
   .popup .section-title {
     font-size: 18px;
     line-height: 29px;
-    margin-top: 15px;
-    margin-bottom: 13px;
+    margin-top: 14px;
+    margin-bottom: 11px;
   }
   
   .popup-container {
     margin: 0 auto;
-    padding-left: 27px;
-    padding-right: 31px;
+    padding-left: 33px;
+    padding-right: 21px;
   }
   
   .popup-close {
@@ -299,7 +299,7 @@
     height: 27px;
     border-radius: 3px;
     top: -37px;
-    left: 335px;
+    left: 100%;
     background: url(../svg/form-x.svg);
   }
   
@@ -314,7 +314,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-bottom: 23px;
+    padding-bottom: 26px;
   }
   
   .popup-select {
@@ -328,7 +328,7 @@
     -moz-appearance: none;
     min-width: 100%;
     height: 50px;
-    padding-left: 19px;
+    padding-left: 22px;
     cursor: pointer;
   }
   
@@ -338,16 +338,39 @@
   
   .radio {
     display: flex;
-    padding-left: 7px;
-    margin-bottom: -14px;
+    padding-left: 0px;
+    margin-bottom: -28px;
   }
   
   .radio-input {
-    margin-right: 35px;
+    margin-right: 25px;
   }
   
   .feedback-radio-input {
     cursor: pointer;
+  }
+
+  .feedback-radio-input + label::before {
+    transition: 0.3s;
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    /* border: 1px solid #b59f5b; */
+    background-image: url("../svg/form-empty-circle.svg");
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 90% 90%;
+    border-radius: 50%;
+  }
+  
+  .feedback-radio-input:checked + label::before {
+    /* border: 1px solid #b59f5b; */
+    background-image: url("../svg/form-circle.svg");
+    background-size:  90% 90%;
   }
   
   .feedback-radio-label {
@@ -386,7 +409,7 @@
   }
   
   .topic-radio {
-    margin-bottom: 11px;
+    margin-bottom: 5px;
   }
   
   .feedback-question {

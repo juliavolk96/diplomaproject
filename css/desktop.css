@@ -928,13 +928,13 @@ select:focus {
   z-index: -1;
   opacity: 0;
 }
-/* for the label element associated with .custom-checkbox */
+
 .feedback-radio-input + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
-/* creating a pseudo-element in label before with the following styles*/
+
 .feedback-radio-input + label::before {
   transition: 0.3s;
   content: "";
@@ -951,13 +951,12 @@ select:focus {
   background-size: 55% 55%;
   border-radius: 50%;
 }
-/* styles for a checkbox in the checked state */
+
 .feedback-radio-input:checked + label::before {
   /* border: 1px solid #b59f5b; */
   background-image: url("../svg/form-circle.svg");
   background-size: 55% 55%;
 }
-
 
 .feedback-radio-label {
   font-size: 13px;
