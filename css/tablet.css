@@ -96,22 +96,24 @@
     margin-bottom: 60px;
     padding-left: 0;
     max-width: 700px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .main {
     max-width: 427px;
-    margin: auto;
+    margin: 0 auto;
   }
 
   .posts {
     display: flex;
     flex-direction: column;
-    margin-right: 43px;
+    margin-right: 33px; 
   }
 
   .posts:not(:first-child) {
     margin-top: 63px;
-    margin-right: 35px;
+    /* margin-right: 35px; */
   }
 
   .post-image {
@@ -145,6 +147,13 @@
     margin-bottom: 27px;
   }
 
+  .text-description {
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
   /*Aside*/
 
   .aside {
@@ -156,12 +165,30 @@
     margin-left: 0;
   }
 
+  .aside-post {
+    display: flex;
+    margin-bottom: 18px;
+  }
+
+  .aside-image {
+    background-color: #f4f7f6;
+    background-size: cover;
+    padding-top: 10px;
+    width: 70px;
+    height: 70px;
+  }
   /*Search*/
 
   .search {
     margin-left: 0px;
   }
 
+  .search form {
+    margin-top: 73px;
+    margin-bottom: 56px;
+    width: 100%;
+    display: flex;
+  }
   /*Subscription*/
 
   .subscription {
@@ -170,11 +197,23 @@
     margin-left: 0px;
   }
 
+  .subscription .section-title {
+    margin: 0 auto;
+    padding-right: 10px;
+    margin-bottom: 23px;
+  }
   /*Hashtags*/
 
   .hashtags {
     width: inherit;
     margin-left: 0px;
+  }
+
+  .hashtags .section-title {
+    margin: 0 auto;
+    margin-bottom: 28px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .hashtags-list {
@@ -187,17 +226,22 @@
     margin-left: 0px;
   }
 
+  .topics .section-title {
+    margin: 0 auto;
+  }
 
   /*Shop*/
 
   .shop {
     width: 100%;
-    margin-top: 64px;
+    margin-top: 56px;
+   
   }
 
   .shop .section-title {
     font-size: 18px;
-    margin: 0 0 28px;
+    margin: 0 auto;
+    margin-bottom: 27px;
   }
 
   .shop-container {
@@ -213,8 +257,8 @@
   .shop-wrapper {
     margin-bottom: 4px;
     width: 43vw;
-    padding: 17px; /*Под вопросом*/
-    bottom: 28px;
+    /* padding: 17px; Под вопросом */
+    bottom: 36px;
     margin: 0px;
   }
 
@@ -231,6 +275,7 @@
   .price {
     font-size: 20px;
     line-height: 24px;
+    margin: 0;
   }
 
   .last-price {
@@ -243,12 +288,12 @@
   /*Footer*/
 
   .footer {
-    margin-top: 28px;
+    margin-top: 20px;
   }
   
   .footer-container {
-    width: 90%;
-    margin-bottom: 25px;
+    width: 100%;
+    margin-bottom: 29px;
   }
 
   .adress {
