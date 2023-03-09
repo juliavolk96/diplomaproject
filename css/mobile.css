@@ -7,8 +7,7 @@
   .header {
     padding: 0px;
     background-image: url(../images/banner-mobile.jpg);
-    /* margin-bottom: 35px; */
-    margin: 0px 0px 35px 0px;
+    margin: 0;
   }
 
   .logo {
@@ -33,7 +32,7 @@
     width: 25px;
     border-bottom: 12px double rgb(255, 255, 255); 
     border-top: 4px solid rgb(255, 255, 255); 
-    margin-left: 90%;
+    margin-left: 89%;
     margin-top: 30px;
     margin-bottom: 180px;
   }
@@ -45,22 +44,22 @@
   .banner {
     width: 100%;
     text-align: center;
-    padding: 1px 0px 0px 0px;
-    margin: 0px;
+    margin: 0 auto;
+    padding: 25px 0 0 3px;
   }
 
   .banner-title {
     font-size: 26px;
     line-height: 36px;
-    /* padding-top: 22px;
-    padding-bottom: 88px; */
-    padding: 22px 0px 88px 0px;
+    margin-bottom: 208px;
+    font-weight: 700;
   }
 
-    /*Trends*/
+  /*Trends*/
 
     .trends .section-title {
       font-size: 16px;
+      margin-top: 41px;
     }
   
     .trends-wrapper {
@@ -105,6 +104,7 @@
     flex-direction: column;
     padding-left: 0px;
     width: 92%;
+    padding-right: 5px;
   }
 
   .page .tags {
@@ -115,7 +115,7 @@
   /*Main*/
   
   .main {
-    margin: 0 0 30px;
+    margin: 0 0 32px;
     width: auto;
   }
 
@@ -175,12 +175,17 @@
   .new-posts .section-title {
     font-size: 16px;
     line-height: 20px;
-    margin-top: 21px;
+    margin-top: 20px;
   }
 
   .new-posts {
     margin-left: 0px;
+    margin-right: 0px;
   }
+
+  .aside-image {
+    padding-top: 10px;
+}
 
   .aside-title {
     font-size: 14px;
@@ -206,11 +211,12 @@
   .field {
     /* max-width: 53.56vw; */
     padding-right: 0px;
-    min-width: 76vw;
+    min-width: 74vw;
   }
 
   .button {
-    left: 83vw;
+    width: 48px;
+    height: 48px;
   }
 
   /*Subscription*/
@@ -277,7 +283,7 @@
 
   .shop {
     width: 100%;
-    margin-top: 51px;;
+    margin-top: 54px;;
   }
 
   .shop .section-title {
@@ -290,9 +296,9 @@
 
   .shop-wrapper {
     padding: 19px;
-    bottom: 32px;
-    margin-left: 13px;
-    margin-right: 12px;
+    bottom: 35px;
+    margin-left: 17px;
+    margin-right: 15px;
     font-size: 15px;
     line-height: 22px;
   }
@@ -327,7 +333,7 @@
     background-color: #b59f5b;
     border: none;
     width: 140px;
-    height: 45px;
+    height: 48px;
     color: white;
   }
   
@@ -335,22 +341,21 @@
   /*Footer*/
 
   .footer {
-    margin: 27px 0px 0px 0px;
-    padding: 0px 12px 0px 0px;
+    margin-top: 4px;
     height: 81px;
   }
   
   .footer-container {
     width: 91%;
-    margin-bottom: 24px;
+    margin-bottom: 33px;
   }
 
   .adress {
-    margin-bottom: 25px;
+    margin-bottom: 0px;
   }
 
   .footer-copyright {
-    margin-left: 28px;
+    margin-left: 8px;
     margin-bottom: 0px;
   }
 
