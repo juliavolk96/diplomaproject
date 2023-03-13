@@ -46,91 +46,101 @@ li {
 
 .popup {
   width: 100%;
-	height: 100vh;
-	padding-top: 120px;
-	padding-bottom: 0px;
-	background-color: rgba(0, 0, 0, 0.6);
-	overflow-y: auto;
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: flex;
-	z-index: 10;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup-feedback {
+  margin: 0 auto;
+  padding-left: 3px;
+  padding-top: 17px;
 }
 
 .popup .section-title {
   font-size: 20px;
   line-height: 29px;
-  margin-top: 18px;
-  margin-bottom: 12px;
+  margin: 0;
 }
 
 .popup-container {
-  max-width: 390px;
   margin: 0 auto;
   background-color:rgb(255, 255, 255);
   position: relative;
-  /* margin-top: 10vh; */
-  padding-left: 31px;
-  height: fit-content;
-  margin-top: 126px;
-  padding-right: 26px;
+  max-height: 590px;
+  max-width: 391px;
+  margin-top: 245px;
 }
 
 .popup-close {
   border: none;
   content: "";
   position: relative;
-  width: 20px;
-  height: 20px;
-  top: -31px;
-  left: 100%;
+  width: 19px;
+  height: 19px;
   cursor: pointer;
   background: url(../svg/form-x.svg);
+  bottom: 35px;
+  left: 96%;
 }
 
-.popup-feedback {
-  margin: 0 auto;
-	text-align: left;
-	background-color: #fff;
-	color: #000000;
+.content {
+  padding-left: 31px;
+  padding-right: 29px;
+  padding-top: 18px;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .form-input, .popup-radio, .popup-textarea {
   display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding-bottom: 26px;
+  flex-direction: column;
+}
+
+.text-input {
+  margin-bottom: 5px;
 }
 
 .popup-select {
+  min-width: 100%;
   border-style: none;
-  background: url(../svg/form-arrows.svg) right 17px center/ 10px no-repeat #f3f7f6;
-  opacity: 0.541;
-  font-size: 13px;
-  color: #000000;
-  font-weight: 400;
+  cursor: pointer;
+  height: 48px;
+  color: gray;
+  
+  padding-left: 20px;
+
+  background: url(../svg/form-arrows.svg) right 15px center/ 10px no-repeat;
+  background-color: #f4f7f6;
+
   -webkit-appearance: none;
   -moz-appearance: none;
-  min-width: 100%;
-  height: 50px;
-  padding-left: 20px;
-  cursor: pointer;
+
+  font-size: 13px;
+  font-weight: 400;
 }
+
 
 select:focus {
 	border: 1px solid #b59f5b;
 }
 
+.popup-radio {
+  margin-top: 31px;
+}
+
+.topic-radio {
+  margin-bottom: 3px;
+}
+
 .radio {
-	display: flex;
-	/* padding-left: 7px; */
-	margin-bottom: -30px;
+  display: flex;
 }
 
 .radio-input {
   position: relative;
-	margin-right: 2px;
 }
 
 .feedback-radio-input {
@@ -147,29 +157,29 @@ select:focus {
   display: inline-flex;
   align-items: center;
   user-select: none;
+  gap: 5px;
+  margin-right: 15px;
+  margin-top: 6px;
 }
 
 .feedback-radio-input + label::before {
   transition: 0.3s;
   content: "";
-  display: inline-block;
-  width: 30px;
-  height: 30px;
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
   flex-grow: 0;
-  /* border: 1px solid #b59f5b; */
   background-image: url("../svg/form-empty-circle.svg");
-  margin-right: 0.5em;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 55% 55%;
+  background-position: center left;
+  background-size: 100% 100%;
   border-radius: 50%;
-}
+}  
 
 .feedback-radio-input:checked + label::before {
-  /* border: 1px solid #b59f5b; */
   background-image: url("../svg/form-circle.svg");
-  background-size: 55% 55%;
+   background-size: 100% 100%;
 }
 
 .feedback-radio-label {
@@ -177,91 +187,72 @@ select:focus {
   color: #000000;
   font-weight: 400;
   cursor: pointer;
+}
+
+.popup-textarea {
+  margin-top: 26px;
+  min-width: 100%;
 }
 
 .textarea {
-  min-width: 100%;
-  margin-bottom: 15px;
+  margin-top: 5px;
 }
 
 .textarea-field {
+  min-width: 100%;
   border-style: none;
   outline: 0;
-  height: 131px;
-  opacity: 0.541;
+  min-height: 130px;
+  background-color: #f4f7f6;
+
   font-size: 13px;
   color: #000000;
   font-weight: 400;
-  min-width: 100%;
-  resize: none;
-  padding: 17px 30px 20px 22px;
+
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
-.textarea-field:focus {
-	border: 1px solid #b59f5b;
-}
 
-/*Текст в popup*/
-.text-input {
-  font-size: 13px;
-  line-height: 40px;
-  color: #000000;
-  font-weight: 400;
-}
 
-.topic-radio {
-  font-size: 13px;
-  color: #000000;
-  font-weight: 400;
-}
 
-.feedback-question {
-  font-size: 13px;
-  color: #000000;
-  font-weight: 400;
-  padding-top: 25px;
-  padding-bottom: 10px;
-}
-
-.feedback-radio-label {
-  font-size: 13px;
-  color: #000000;
-  font-weight: 400;
-}
 
 /*кнопка Popup*/
 .popup-button {
+  margin-top: 27px;
   width: 100%;
-  height: 50px;
+  height: 48px;
   border: none;
   background-color: #b59f5b;
   color: #ffffff;
-  font-weight: 700;
+  line-height: 40px;
   text-transform: uppercase;
-  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
   cursor: pointer;
-  padding: 0px 0px 0px 0px;
-  margin-bottom: 25px;
 }
 
 .popup-button:hover {
   background-color: #323232;
  }
 
- .header {
-  width: 100%;
-  /* padding: 32px 5px;  */
-  margin-bottom: 60px;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  z-index: 1;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black;
-  background-image: url(../images/banner-bg.jpg);
+
+/*Header*/
+
+.header {
+width: 100%;
+/* padding: 32px 5px;  */
+margin-bottom: 60px;
+position: relative;
+text-align: center;
+text-transform: uppercase;
+color: white;
+z-index: 1;
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+background-color: black;
+background-image: url(../images/banner-bg.jpg);
 }
 
 .header::after {
@@ -908,7 +899,6 @@ input:focus {
   font-size: 20px;
   font-weight: 700;
   line-height: 15px;
-  align-items: ;
 }
 
 .last-price {
